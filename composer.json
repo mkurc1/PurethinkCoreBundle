@@ -1,0 +1,33 @@
+{
+    "name": "mkurc1/purethink-core-bundle",
+    "license": "MIT",
+    "type": "symfony-bundle",
+    "description": "Symfony CMSBundle",
+    "homepage": "http://purethink.pl",
+    "keywords": [
+        "cms",
+        "admin",
+        "purethink"
+    ],
+    "authors": [
+        {
+            "name": "Michał Kurcewicz",
+            "email": "mkurc1@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Purethink\\CoreBundle\\": ""
+        }
+    },
+    "require": {
+        "php": ">=5.3.9",
+        "a2lix/translation-form-bundle": "^2.1",
+        "a2lix/i18n-doctrine-bundle": "^0.1.0",
+        "sonata-project/user-bundle": "^2.2",
+        "sonata-project/intl-bundle": "^2.2",
+        "sonata-project/block-bundle": "~2.2",
+        "sonata-project/media-bundle": "2.3.3",
+        "sonata-project/formatter-bundle": "~2.3"
+    }
+}
