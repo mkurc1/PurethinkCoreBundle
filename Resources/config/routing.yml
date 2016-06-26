@@ -1,6 +1,10 @@
 sonata_user_security:
     resource: "@SonataUserBundle/Resources/config/routing/sonata_security_1.xml"
 
+sonata_user_resetting:
+    resource: "@SonataUserBundle/Resources/config/routing/sonata_resetting_1.xml"
+    prefix: /resetting
+
 media:
     resource: '@SonataMediaBundle/Resources/config/routing/media.xml'
     prefix: /media
