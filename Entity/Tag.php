@@ -26,6 +26,11 @@ class Tag extends BaseTag implements SoftDeleteable
      */
     protected $id;
 
+    public function __construct()
+    {
+        $this->enabled = true;
+    }
+
     /**
      * @return int
      */
