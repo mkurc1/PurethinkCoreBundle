@@ -6,14 +6,14 @@ use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
 use Gedmo\SoftDeleteable\SoftDeleteable;
 use Gedmo\SoftDeleteable\Traits\SoftDeleteableEntity;
-use Sonata\ClassificationBundle\Entity\BaseTag;
+use Sonata\ClassificationBundle\Entity\BaseCategory;
 
 /**
- * @ORM\Table(name="cms_tag")
+ * @ORM\Table(name="cms_category")
  * @ORM\Entity()
  * @Gedmo\SoftDeleteable(fieldName="deletedAt")
  */
-class Tag extends BaseTag implements SoftDeleteable
+class Category extends BaseCategory implements SoftDeleteable
 {
     use SoftDeleteableEntity;
 
