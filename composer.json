@@ -29,6 +29,7 @@
         "sonata-project/block-bundle": "^3.0.0",
         "sonata-project/media-bundle": "^3.0.0",
         "sonata-project/classification-bundle": "^3.0.0",
-        "sonata-project/formatter-bundle": "^3.0.0"
+        "sonata-project/formatter-bundle": "^3.0.0",
+        "mkurc1/doctrine-prefix-bundle": "^1.0.0"
     }
 }
