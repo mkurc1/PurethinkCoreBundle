@@ -9,7 +9,7 @@ use Gedmo\SoftDeleteable\Traits\SoftDeleteableEntity;
 use Sonata\ClassificationBundle\Entity\BaseCategory;
 
 /**
- * @ORM\Table(name="cms_category")
+ * @ORM\Table(name="category")
  * @ORM\Entity()
  * @Gedmo\SoftDeleteable(fieldName="deletedAt")
  */

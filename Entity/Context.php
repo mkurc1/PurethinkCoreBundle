@@ -9,7 +9,7 @@ use Gedmo\SoftDeleteable\Traits\SoftDeleteableEntity;
 use Sonata\ClassificationBundle\Entity\BaseContext;
 
 /**
- * @ORM\Table(name="cms_context")
+ * @ORM\Table(name="context")
  * @ORM\Entity()
  * @Gedmo\SoftDeleteable(fieldName="deletedAt")
  */

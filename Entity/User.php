@@ -10,7 +10,7 @@ use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * @ORM\Entity
- * @ORM\Table(name="cms_user")
+ * @ORM\Table(name="user")
  * @Gedmo\SoftDeleteable(fieldName="deletedAt")
  */
 class User extends BaseUser implements SoftDeleteable
@@ -22,13 +22,13 @@ class User extends BaseUser implements SoftDeleteable
      *
      * @ORM\Id
      * @ORM\Column(type="integer")
-     * @ORM\GeneratedValue(strategy="IDENTITY")
+     * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
 
     /**
      * @ORM\ManyToMany(targetEntity="Group")
-     * @ORM\JoinTable(name="cms_user_user_group",
+     * @ORM\JoinTable(name="user_user_group",
      *      joinColumns={@ORM\JoinColumn(name="user_id", referencedColumnName="id")},
      *      inverseJoinColumns={@ORM\JoinColumn(name="group_id", referencedColumnName="id")}
      * )

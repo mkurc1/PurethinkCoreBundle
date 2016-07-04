@@ -7,7 +7,7 @@ use Sonata\MediaBundle\Entity\BaseMedia;
 
 /**
  * @ORM\Entity
- * @ORM\Table(name="cms_media")
+ * @ORM\Table(name="media")
  */
 class Media extends BaseMedia
 {
@@ -16,7 +16,7 @@ class Media extends BaseMedia
      *
      * @ORM\Id
      * @ORM\Column(type="integer")
-     * @ORM\GeneratedValue(strategy="IDENTITY")
+     * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
 

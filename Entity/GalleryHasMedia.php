@@ -7,7 +7,7 @@ use Sonata\MediaBundle\Entity\BaseGalleryHasMedia;
 
 /**
  * @ORM\Entity
- * @ORM\Table(name="cms_gallery_has_media")
+ * @ORM\Table(name="gallery_has_media")
  */
 class GalleryHasMedia extends BaseGalleryHasMedia
 {
@@ -16,7 +16,7 @@ class GalleryHasMedia extends BaseGalleryHasMedia
      *
      * @ORM\Id
      * @ORM\Column(type="integer")
-     * @ORM\GeneratedValue(strategy="IDENTITY")
+     * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
 
