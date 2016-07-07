@@ -1,0 +1,2 @@
+parameters:
+    sonata.classification.manager.category.class: Purethink\CoreBundle\Entity\CategoryManager
