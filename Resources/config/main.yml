@@ -35,7 +35,7 @@ a2lix_translation_form:
     locales: [pl, en]
 
 doctrine_migrations:
-    table_name: cms_migration_versions
+    table_name: migration_versions
 
 sonata_classification:
     class:
