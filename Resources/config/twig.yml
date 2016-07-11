@@ -1,0 +1,7 @@
+services:
+    purethink.twig.route_extension:
+        class: Purethink\CoreBundle\Twig\RouteExtension
+        arguments: ['@request_stack', '@router']
+        public: false
+        tags:
+            - { name: twig.extension }
