@@ -37,6 +37,32 @@ a2lix_translation_form:
 doctrine_migrations:
     table_name: migration_versions
 
+sonata_formatter:
+    formatters:
+        markdown:
+            service: sonata.formatter.text.markdown
+            extensions:
+                - sonata.formatter.twig.control_flow
+                - sonata.formatter.twig.gist
+        text:
+            service: sonata.formatter.text.text
+            extensions:
+                - sonata.formatter.twig.control_flow
+                - sonata.formatter.twig.gist
+        rawhtml:
+            service: sonata.formatter.text.raw
+            extensions:
+                - sonata.formatter.twig.control_flow
+                - sonata.formatter.twig.gist
+        richhtml:
+            service: sonata.formatter.text.raw
+            extensions:
+                - sonata.formatter.twig.control_flow
+                - sonata.formatter.twig.gist
+        twig:
+            service: sonata.formatter.text.twigengine
+            extensions: []
+
 sonata_classification:
     class:
         tag:          Purethink\CoreBundle\Entity\Tag
@@ -110,3 +136,6 @@ sonata_user:
             validation_groups:
                 - Profile
                 - Default
+
+sonata_block:
+    default_contexts: [cms]
