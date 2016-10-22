@@ -67,4 +67,25 @@ class CategoryManager extends BaseCategoryManager
 
         return $context;
     }
+
+    public function getRootCategories($loadChildren = true)
+    {
+        $class = $this->getClass();
+
+        $rootCategories = $this->getObjectManager()->createQuery(sprintf('SELECT c FROM %s c WHERE c.parent IS NULL', $class))
+            ->execute();
+
+        $categories = array();
+
+        /** @var Category $category */
+        foreach ($rootCategories as $category) {
+            if ($category->getContext() === null) {
+                throw new \RuntimeException('Context cannot be null');
+            }
+
+            $categories[$category->getSlug()] = $loadChildren ? $this->getRootCategory($category->getContext()) : $category;
+        }
+
+        return $categories;
+    }
 }
