@@ -121,8 +121,7 @@ sonata_user:
         user: Purethink\CoreBundle\Entity\User
         group: Purethink\CoreBundle\Entity\Group
     impersonating:
-        route: page
-        parameters: { path: / }
+        route: purethink_cms_homepage
     manager_type: orm
     profile:
         dashboard:
