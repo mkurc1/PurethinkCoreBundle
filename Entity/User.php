@@ -34,4 +34,10 @@ class User extends BaseUser implements SoftDeleteable
      * )
      */
     protected $groups;
+
+
+    public function getDisplayName() :string
+    {
+        return $this->getFirstname() . ' ' . $this->getLastname();
+    }
 }
