@@ -10,7 +10,7 @@ use Sonata\ClassificationBundle\Entity\BaseCategory;
 
 /**
  * @ORM\Table(name="category")
- * @ORM\Entity()
+ * @ORM\Entity(repositoryClass="Purethink\CoreBundle\Entity\Repository\CategoryRepository")
  * @Gedmo\SoftDeleteable(fieldName="deletedAt")
  */
 class Category extends BaseCategory implements SoftDeleteable
