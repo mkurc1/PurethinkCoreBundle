@@ -10,7 +10,7 @@ use Sonata\ClassificationBundle\Entity\BaseTag;
 
 /**
  * @ORM\Table()
- * @ORM\Entity()
+ * @ORM\Entity(repositoryClass="Purethink\CoreBundle\Entity\Repository\TagRepository")
  * @Gedmo\SoftDeleteable(fieldName="deletedAt")
  */
 class Tag extends BaseTag implements SoftDeleteable
