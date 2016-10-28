@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="Purethink\CoreBundle\Entity\Repository\UserRepository")
  * @ORM\Table(name="user")
  * @Gedmo\SoftDeleteable(fieldName="deletedAt")
  */
